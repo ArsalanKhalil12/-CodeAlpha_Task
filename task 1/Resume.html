@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arsalan's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: #343a40;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #495057;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #1abc9c;
+    }
+
+    .about p, .skills ul, .projects .card, .contact p {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+    }
+
+    .skills li {
+      background: #1abc9c;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+
+    .skills li:hover {
+      transform: scale(1.1);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #1abc9c;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #159a80;
+    }
+
+    footer {
+      background: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Arsalan Khattak</h1>
+    <p>Web Developer | AI Enthusiast | Intern @ CodeAlpha</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I’m Arsalan, a passionate Computer Science student with skills in Web Development and AI. I love building user-friendly websites and exploring intelligent systems that solve real-world problems.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Bootstrap</li>
+      <li>GitHub</li>
+      <li>Python</li>
+      <li>Figma</li>
+      <li>AI Tools</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Music Player</h3>
+      <p>A web-based music player using JavaScript with controls, playlist, and volume control.</p>
+    </div>
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>My personal responsive portfolio to showcase my skills and contact information.</p>
+    </div>
+    <div class="card">
+      <h3>AI Agriculture Optimizer</h3>
+      <p>An AI-based idea to optimize crop production using smart hybrid suggestions (academic project).</p>
+    </div>
+  </section>
+
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+    <a href="#" class="btn" download>Download Resume (PDF)</a>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:arsalankhattak952@gmail.com">arsalankhattak952@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank">linkedin.com/in/arsalan</a></p>
+    <p>GitHub: <a href="https://github.com/arsalan" target="_blank">github.com/arsalan</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Arsalan Khattak | All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
